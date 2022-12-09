@@ -1,0 +1,216 @@
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #140424;
+  background-repeat: repeat;
+  background-size: 250px 250px;
+  background-image: url("../img/main-background.jpg");
+}
+
+h1 {
+  font-size: 4.47vh;
+}
+
+p { 
+  font-size: 2.24vh;
+}
+
+button {
+  height: 100%;
+  width: 223px;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  border-radius: 5px;
+}
+
+.uidiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.scorenumber {
+  font-size: 6.1vh;
+  margin-top: 0;
+}
+
+.buttondiv {
+  width: 200px;
+  height: 200px;
+  align-self: auto;
+  padding-right: 0px !important;
+  padding: 5%;
+  padding-left: 0px !important;
+  text-orientation: upright;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  border: 1px solid rgb(138, 79, 6);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttondiv:hover {
+  border-width: 2px;
+  background-color: #ffaa71;
+}
+
+.choicedisplay {
+  width: 50%;
+  max-height: 100%;
+
+  margin-top: -26px;
+}
+
+.scoredisplay {
+  width: 50%;
+}
+
+.buttonimage {
+  height: 128px;
+  width: 128px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center; 
+}
+
+div#buttons {
+  margin-left: 5%;
+}
+
+.choiceimage {
+  height: 100%;
+  width: 45%;
+  padding-top: 45%;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("../img/myleg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  border: 1px solid rgb(20, 5, 35);
+  border-radius: 5px;
+}
+
+.scorefont {
+  font-weight: bold;
+  font-size: 3.2vh;
+  margin-bottom: 10px;
+  color: #2f5687;
+
+}
+
+.choicefont {
+  letter-spacing: 0.1em;
+  margin: 0 auto 0 auto;
+  font-weight: bold;
+  font-size: 2.8vh;
+}
+
+#gameinfo {
+}
+
+#buttons {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  justify-content: space-evenly;
+  /* margin-right: 1vw; */
+}
+
+#roundnumber {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#roundresults {
+  font-style: italic;
+}
+
+#infodisplay {
+  height: 50%;
+  margin-top: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#scoredisplaydiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-bottom: 0;
+}
+
+#choicedisplaydiv {
+  height: 1000%;
+
+  display: flex;
+  flex-direction: col;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* #rock {
+  background-image: url("../img/crisp.png");
+  
+}
+
+#paper {
+  background-image: url("../img/prisstine.png");
+} */
+
+/* #scissors {
+  background-image: url("../img/cluckers.png");
+} */
+
+span#scissors > img, span#rock > img, span#paper > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2% !important;
+  padding-top: 0%;
+}
+
+
+
+@media only screen and (max-width: 100px) {
+  body {
+      height: auto;
+
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  #gameinfo {
+      width: 80vw;
+      height: 80vh;
+  
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  
+
+
+
+}
