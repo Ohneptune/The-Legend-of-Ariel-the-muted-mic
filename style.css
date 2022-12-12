@@ -1,10 +1,8 @@
 body {
   width: 100vw;
   height: 100vh;
-
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -12,7 +10,7 @@ body {
   background-color: #140424;
   background-repeat: repeat;
   background-size: 250px 250px;
-  background-image: url("../img/main-background.jpg");
+  
 }
 
 h1 {
@@ -26,13 +24,10 @@ p {
 button {
   height: 100%;
   width: 223px;
-
   max-width: 100%;
   max-height: 100%;
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
   border-radius: 5px;
 }
 
@@ -72,7 +67,6 @@ button {
 .choicedisplay {
   width: 50%;
   max-height: 100%;
-
   margin-top: -26px;
 }
 
@@ -101,11 +95,9 @@ div#buttons {
   margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
-
   background-image: url("../img/myleg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
   border: 1px solid rgb(20, 5, 35);
   border-radius: 5px;
 }
@@ -125,8 +117,7 @@ div#buttons {
   font-size: 2.8vh;
 }
 
-#gameinfo {
-}
+
 
 #buttons {
   position: relative;
@@ -157,13 +148,11 @@ div#buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
   margin-bottom: 0;
 }
 
 #choicedisplaydiv {
   height: 1000%;
-
   display: flex;
   flex-direction: col;
   justify-content: space-around;
@@ -196,7 +185,6 @@ span#scissors > img, span#rock > img, span#paper > img {
 @media only screen and (max-width: 100px) {
   body {
       height: auto;
-
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
@@ -205,12 +193,7 @@ span#scissors > img, span#rock > img, span#paper > img {
   #gameinfo {
       width: 80vw;
       height: 80vh;
-  
       margin-top: 50px;
       margin-bottom: 50px;
   }
-  
-
-
-
 }

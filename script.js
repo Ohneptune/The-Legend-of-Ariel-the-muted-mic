@@ -3,6 +3,7 @@ let currentRoundNumber = 0;
 let previousResult = -2;
 
 
+
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -10,7 +11,6 @@ buttons.forEach((button) => {
         if(button.id == "rock") playerSelection = "Rock";
         if(button.id == "paper") playerSelection = "Paper";
         if(button.id == "scissors") playerSelection = "Scissors";
-        
         if(currentRoundNumber < maxRounds || previousResult == 0) {
             updateRoundNumber();
             previousResult = playRound(playerSelection);
@@ -63,13 +63,13 @@ function computerPlay()
     switch(numericalChoice)
     {
         case 0:
-            finalChoice = "Rock";
+            finalChoice = "rock";
             break;
         case 1:
-            finalChoice = "Paper";
+            finalChoice = "paper";
             break;
         case 2:
-            finalChoice = "Scissors";
+            finalChoice = "scissors";
             break;
         default:
             break;
@@ -87,11 +87,11 @@ function updateImage(user, selection) {
     else
         return;
 
-    if(selection == "Rock")
+    if(selection == "rock")
         ourImage.style.backgroundImage = "url(img/cluckers.png)";
-    else if(selection == "Paper")
+    else if(selection == "paper")
         ourImage.style.backgroundImage = "url(img/crisp.png)";
-    else if(selection == "Scissors")
+    else if(selection == "scissors")
         ourImage.style.backgroundImage = "url(img/prisstine.png)";
 }
 
@@ -127,4 +127,5 @@ function gameOver() {
     else if(playerScore > computerScore)
         roundResults.textContent += `\n\n Bye Feliciana!! She dead`
 
-}
+        
+};
